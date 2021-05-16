@@ -1,4 +1,11 @@
 
+```
+az login
+az pipelines create --name "<descriptive name>.CI" --organization https://dev.azure.com/<organization --project <project-name> --repository <name-of-the-repo> --repository-type github
+az pipelines show --name "<descriptive name>.CI" --organization https://dev.azure.com/<organization --project <project-name>
+az pipelines run --name "<descriptive name>.CI" --branch pipeline --output table
+```
+
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
